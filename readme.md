@@ -1,5 +1,13 @@
 # Terminal Chat App with TCP Sockets
 
+### Preview
+
+|                    User 0                    |                    User 1                    |
+| :------------------------------------------: | :------------------------------------------: |
+| ![Screenshot 1](screenshots/screenshot1.png) | ![Screenshot 2](screenshots/screenshot2.png) |
+
+---
+
 Nonsimultaneous chat app in terminal build using [Sockets](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/Socket.html)
 in java.
 
