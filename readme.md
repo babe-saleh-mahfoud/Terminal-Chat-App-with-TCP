@@ -3,13 +3,7 @@
 Nonsimultaneous chat app in terminal build using [Sockets](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/Socket.html)
 in java.
 
-## Authors
-
-- [@babesalehmahfoud](https://www.github.com/babe-saleh-mahfoud)
-
 ## Badges
-
-Add badges from somewhere like: [shields.io](https://shields.io/)
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
@@ -17,7 +11,7 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 
 ## Contributing
 
-Feel free to fork the project and open you PRs, and i will review and merge them
+Feel free to fork the project and open you PRs, and i will review and merge them.
 
 ## Installation
 
