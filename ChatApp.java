@@ -9,14 +9,17 @@ public class ChatApp {
 	private static Socket sendSocket;
 	private static Socket receiveSocket;
 	static ServerSocket serverSocket;
+	private static String messageTextColor = "\u001B[34m";
+	private static String normalTextColor = " \u001b[30m";
 
 	static void sendMessage(String message, Boolean encrypt) {
+		EcnryptionImplementation encryption = new EcnryptionImplementation();
 		try {
 			sendSocket = new Socket("localhost", user == 0 ? port : port + 1);
 			System.out.println("sending message ...");
 			DataOutputStream sendBuffer = new DataOutputStream(sendSocket.getOutputStream());
 
-			sendBuffer.writeUTF(message);
+			sendBuffer.writeUTF(encryption.encryptMessage(message));
 			System.out.println("message sent !");
 
 			return;
@@ -39,7 +42,9 @@ public class ChatApp {
 		}
 		System.out.print("  ");
 		System.out.println("|");
-		System.out.println("|  " + message + "  |");
+		System.out.print("|  ");
+		System.out.print(messageTextColor + message);
+		System.out.println(normalTextColor + "  |");
 		System.out.print("|");
 		System.out.print("  ");
 
